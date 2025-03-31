@@ -6,8 +6,8 @@ let
   nvimRepo = pkgs.fetchFromGitHub {
     owner = "Dracovolodeus";
     repo = "DracoNvim";
-    rev = "2cb25a393ec3c6c7ac6a76a803c56952c6d83862";
-    sha256 = "sha256-RbMpKin26yWMnVrQVs+ri9kFWVHitWsexrn2bGEToSY=";
+    rev = "9ef27390fcaadd11058e5824463a5f6b42b40dd2";
+    sha256 = "sha256-UPUGTyfLZvYEvp+kdIqZBsX1YP1OXBT7UusQhe3YEn4=";
   };
 in
 {
