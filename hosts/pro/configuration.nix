@@ -2,7 +2,8 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      # Include the results of the hardware scan.
       ../hardware-configuration.nix
     ];
 
@@ -11,11 +12,18 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "pro"; # Define your hostname.
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+
+
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -49,7 +57,7 @@
     isNormalUser = true;
     description = "Meowta";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    packages = with pkgs; [ ];
   };
 
   # Allow unfree packages
@@ -63,8 +71,8 @@
     wl-clipboard
   ];
 
-  nix.settings.experimental-features  = [ "nix-command" "flakes" ];
-  nix.settings.trusted-users = ["root" "meowta"];
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.trusted-users = [ "root" "meowta" ];
 
   virtualisation.docker.enable = true;
 

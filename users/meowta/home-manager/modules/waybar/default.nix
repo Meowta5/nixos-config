@@ -11,20 +11,17 @@
           "custom/rofi_launcher"
           "hyprland/workspaces"
         ];
-
         "modules-center" = [
           "hyprland/language"
           "clock"
           "pulseaudio"
           "pulseaudio#microphone"
         ];
-
         "modules-right" = [
           "cpu"
           "disk"
           "memory"
         ];
-
         "hyprland/workspaces" = {
           "active-only" = false;
           "disable-scroll" = true;
@@ -71,6 +68,7 @@
             "default" = [ " " " " " " ];
           };
           "on-click" = "bash /nixos-config/users/\${USER}/bin/toggle_mute.sh";
+          "on-click-right" = "pavucontrol";
         };
 
         "pulseaudio#microphone" = {

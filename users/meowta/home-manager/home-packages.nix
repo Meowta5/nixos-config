@@ -46,6 +46,9 @@
     unzip
     ffmpeg
     cava
+    bluez
+    bluez-tools
+    blueman
     inxi
     wine
 
@@ -59,6 +62,7 @@
 
     # Sound
     pulseaudio
+    pavucontrol
     pamixer
     alsa-utils
 
