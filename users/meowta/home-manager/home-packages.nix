@@ -33,9 +33,11 @@
     cargo
 
     gcc
+    glib
 
     # CLI utils
     fish
+    bat
     git
     tree
     btop
@@ -44,7 +46,6 @@
     unzip
     ffmpeg
     cava
-    glib
     inxi
     wine
 
