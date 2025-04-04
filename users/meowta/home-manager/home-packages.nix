@@ -36,7 +36,6 @@
     glib
 
     # CLI utils
-    fish
     bat
     git
     tree
