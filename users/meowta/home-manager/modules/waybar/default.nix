@@ -8,8 +8,9 @@
         "position" = "top";
         "height" = 35;
         "modules-left" = [
-          "custom/rofi_launcher"
+          "custom/launcher"
           "hyprland/workspaces"
+          "custom/powermenu"
         ];
         "modules-center" = [
           "hyprland/language"
@@ -114,10 +115,15 @@
           "interval" = 10;
           "format" = "   {used}GB/{total}GB ";
         };
-        "custom/rofi_launcher" = {
+        "custom/launcher" = {
           "format" = " 󱄅 ";
-          "tooltip-format" = "Launching rofi";
+          "tooltip-format" = "Launching a rofi-based launcher";
           "on-click" = "rofi -show drun -theme launcher.rasi -location 1 -yoffset 35";
+        };
+        "custom/powermenu" = {
+          "format" = " 󰐥 ";
+          "tooltip-format" = "Launching powermenu based on rofi";
+          "on-click" = "bash $HOME/.config/rofi/powermenu/powermenu.sh";
         };
       };
     };

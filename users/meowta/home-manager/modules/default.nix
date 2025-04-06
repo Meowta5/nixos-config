@@ -2,6 +2,8 @@
   imports = [
     ./wezterm
     ./hyprland
+    ./hyprlock
+    ./hypridle
     ./waybar
     ./fish
     ./gtk

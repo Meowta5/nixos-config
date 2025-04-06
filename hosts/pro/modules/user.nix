@@ -7,7 +7,7 @@
     users.meowta = {
       isNormalUser = true;
       description = "Meowta";
-      extraGroups = [ "networkmanager" "wheel" ];
+      extraGroups = [ "networkmanager" "wheel" "video" ];
       shell = pkgs.fish;
       packages = with pkgs; [ ];
     };

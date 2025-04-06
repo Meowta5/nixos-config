@@ -7,9 +7,10 @@
       "$terminal" = "wezterm";
       "$fileManager" = "thunar";
       "$browser" = "firefox";
-      "$menu" = "rofi -show drun -theme launcher.rasi";
       "$shell" = "fish";
       "$editor" = "nvim";
+      "$launcher" = "rofi -show drun -theme launcher.rasi";
+      "$powermenu" = "bash $HOME/.config/rofi/powermenu/powermenu.sh";
 
       "$mainMod" = "SUPER";
       "$altMod" = "alt";

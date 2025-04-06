@@ -37,6 +37,7 @@
 
     # CLI utils
     bat
+    brightnessctl
     git
     tree
     btop
@@ -53,8 +54,10 @@
 
     # WM and stuff
     hyprland
-    waybar
     hyprshot
+    hyprlock
+    hypridle
+    waybar
     swww
     dunst
     rofi

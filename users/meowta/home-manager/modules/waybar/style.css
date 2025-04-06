@@ -28,6 +28,7 @@
   font-family: JetBrainsMono Nerd Font;
   font-size: 15px;
 }
+
 .module {
   margin: 5px 5px;
 }
@@ -37,25 +38,26 @@ window#waybar {
   color: @text;
 }
 
-#custom-rofi_launcher,
+#custom-launcher,
+#custom-powermenu,
 #workspaces {
   background-color: @surface0;
   margin: 3px 0px;
 }
 
-#custom-rofi_launcher {
+#custom-launcher {
   color: @lavender;
-  margin-left: 1rem;
   border-radius: 0.5rem 0px 0px 0.5rem;
+  margin-left: 1rem;
 }
 
-#workspaces {
+#custom-powermenu {
+  color: @lavender;
   border-radius: 0px 0.5rem 0.5rem 0px;
 }
 
 #workspaces button {
   color: @lavender;
-  border-radius: 0.5rem;
   padding: 0rem;
   min-width: 1.75rem
 }
