@@ -118,12 +118,12 @@
         "custom/launcher" = {
           "format" = " 󱄅 ";
           "tooltip-format" = "Launching a rofi-based launcher";
-          "on-click" = "rofi -show drun -theme launcher.rasi -location 1 -yoffset 35";
+          "on-click" = "pkill rofi || true; rofi -show drun -theme launcher.rasi -location 1 -yoffset 35";
         };
         "custom/powermenu" = {
           "format" = " 󰐥 ";
           "tooltip-format" = "Launching powermenu based on rofi";
-          "on-click" = "bash $HOME/.config/rofi/powermenu/powermenu.sh";
+          "on-click" = "pkill rofi || true; bash $HOME/.config/rofi/powermenu/powermenu.sh";
         };
       };
     };

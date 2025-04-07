@@ -9,8 +9,8 @@
       "$browser" = "firefox";
       "$shell" = "fish";
       "$editor" = "nvim";
-      "$launcher" = "rofi -show drun -theme launcher.rasi";
-      "$powermenu" = "bash $HOME/.config/rofi/powermenu/powermenu.sh";
+      "$launcher" = "bash -c \"pkill rofi || true; rofi -show drun -theme launcher.rasi\"";
+      "$powermenu" = "bash -c \"pkill rofi || true; $HOME/.config/rofi/powermenu/powermenu.sh\"";
 
       "$mainMod" = "SUPER";
       "$altMod" = "alt";
