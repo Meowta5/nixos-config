@@ -130,3 +130,6 @@ cd $USER
   nixos-rebuild switch --flake ./#<hostname>
   home-manager switch --flake ./#<username>
 ```
+
+## 📘 Note
+The screen resolution I use is 1920x1080, which means if you use a different one some things might be in the wrong position. Feel free to fork this repository and make your own edits!
