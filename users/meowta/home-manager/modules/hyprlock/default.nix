@@ -49,7 +49,7 @@ in
             blur_passes = 3;
             noise = 0.0117;
             contrast = 0.9;
-            brightness = 1.25;
+            brightness = 0.75;
             vibrancy = 0.1696;
             vibrancy_darkness = 0.0;
           }

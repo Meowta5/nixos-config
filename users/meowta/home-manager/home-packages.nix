@@ -9,7 +9,6 @@
     xfce.thunar
     xfce.xfconf
     onlyoffice-desktopeditors
-    libsForQt5.kdenlive
     telegram-desktop
     cassette
     gimp
@@ -23,8 +22,6 @@
     openssl
     nix-prefetch-github
 
-    docker
-
     python313Full
     nodejs_23
     uv
@@ -37,7 +34,6 @@
 
     # CLI utils
     bat
-    brightnessctl
     git
     tree
     btop
@@ -46,11 +42,10 @@
     unzip
     ffmpeg
     cava
+    inxi
     bluez
     bluez-tools
     blueman
-    inxi
-    wine
 
     # WM and stuff
     hyprland
