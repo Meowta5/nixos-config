@@ -33,6 +33,7 @@
     glib
 
     # CLI utils
+    warpd
     bat
     git
     tree

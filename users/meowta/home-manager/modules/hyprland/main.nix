@@ -13,6 +13,7 @@
       "$powermenu" = "bash -c \"pkill rofi || true; $HOME/.config/rofi/powermenu/powermenu.sh\"";
 
       "$mainMod" = "SUPER";
+      "$controlMod" = "ctrl";
       "$altMod" = "alt";
     };
   };
