@@ -1,9 +1,10 @@
-configuration {
+{ var, ... }: {
+  home.file.".config/rofi/launcher.rasi".text = ''configuration {
     modi: "run,drun";
     lines: 5;
     font: "JetBrainsMono Nerd Font 14";
     show-icons: true;
-    terminal: "alacritty";
+    terminal: "${var.terminal}";
     drun-display-format: "{icon} {name}";
     location: 0;
     disable-history: false;
@@ -110,6 +111,5 @@ button {
 button selected {
   background-color: @selected-button;
   text-color: @blue;
+}'';
 }
-
-

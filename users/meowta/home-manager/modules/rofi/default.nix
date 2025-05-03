@@ -1,3 +1,6 @@
 {
-    home.file.".config/rofi".source = ./rofi;
+  imports = [
+    ./launcher.nix
+    ./powermenu
+  ];
 }

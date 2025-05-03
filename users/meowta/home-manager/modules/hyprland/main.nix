@@ -1,20 +1,21 @@
-{
+{ var, ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
       monitor = ",preferred,auto,auto";
 
-      "$terminal" = "wezterm";
-      "$fileManager" = "thunar";
-      "$browser" = "firefox";
-      "$shell" = "fish";
-      "$editor" = "nvim";
-      "$launcher" = "bash -c \"pkill rofi || true; rofi -show drun -theme launcher.rasi\"";
-      "$powermenu" = "bash -c \"pkill rofi || true; $HOME/.config/rofi/powermenu/powermenu.sh\"";
+      "$terminal" = var.terminal;
+      "$fileManager" = var.fileManager;
+      "$browser" = var.browser;
+      "$shell" = var.shell;
+      "$editor" = var.editor;
+      "$launcher" = var.launcher;
+      "$powermenu" = var.powermenu;
 
-      "$mainMod" = "SUPER";
-      "$controlMod" = "ctrl";
-      "$altMod" = "alt";
+      "$mainMod" = var.hotkey.mainMod;
+      "$controlMod" = var.hotkey.controlMod;
+      "$altMod" = var.hotkey.altMod;
     };
   };
 }
+

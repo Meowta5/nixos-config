@@ -1,6 +1,9 @@
+{ var, ... }: {
+  home.file.".config/rofi/powermenu/powermenu.sh".text = ''
+
 #!/usr/bin/env bash
 
-dir="$HOME/.config/rofi/powermenu"
+dir="/home/${var.user}/.config/rofi/powermenu"
 theme='powermenu'
 
 # System info
@@ -25,7 +28,7 @@ confirm_action() { # Confirm
     echo -e "$yes\n$no" | rofi -dmenu \
         -p "Confirm $action_name" \
         -mesg "Are you sure?" \
-        -theme "${dir}/confirm.rasi"
+        -theme "''${dir}/confirm.rasi"
 }
 
 lock_screen() { # Lock
@@ -54,7 +57,7 @@ suspend_system() { # Suspend
 
 logout_session() { # Logout
     if [[ $(confirm_action "logout") == "$yes" ]]; then
-        loginctl kill-session ${XDG_SESSION_ID}
+        loginctl kill-session ''${XDG_SESSION_ID}
     fi
 }
 
@@ -64,7 +67,7 @@ logout_session() { # Logout
 
 show_menu() {
     echo -e "$lock\n$suspend\n$logout\n$reboot\n$shutdown" | rofi -dmenu \
-        -theme "${dir}/${theme}.rasi"
+        -theme "''${dir}/''${theme}.rasi"
 }
 
 # ----------- #
@@ -79,3 +82,5 @@ case $(show_menu) in
     "$suspend") suspend_system ;;
     "$logout") logout_session ;;
 esac
+  '';
+}
