@@ -10,5 +10,6 @@
     ./nvim
     ./rofi
     ./fastfetch
+    ./env
   ];
 }

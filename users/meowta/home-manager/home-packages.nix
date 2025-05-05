@@ -12,6 +12,7 @@
     telegram-desktop
     cassette
     gimp
+    krita
     zoom-us
     nwg-look
     obsidian

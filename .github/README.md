@@ -10,7 +10,7 @@
 
 ## 📚 About
 
-<img src="assets/1.png" alt="rice" align="right" width="500px">
+<img src=".github/assets/1.png" alt="rice" align="right" width="500px">
 
 </br>
 
