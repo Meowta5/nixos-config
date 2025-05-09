@@ -5,6 +5,7 @@
     ./user.nix
     ./hyprland.nix
     ./nix.nix
+    ./nixld.nix
     ./net.nix
     ./timezone.nix
     ./swap.nix
