@@ -11,5 +11,6 @@
     ./swap.nix
     ./docker.nix
     ./bluetooth.nix
+    ./virtualbox.nix
   ];
 }

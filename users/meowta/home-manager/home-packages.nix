@@ -18,6 +18,7 @@
     obsidian
     imv
     mpv
+    qemu
 
     # Coding stuff
     openssl
