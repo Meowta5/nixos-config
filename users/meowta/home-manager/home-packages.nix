@@ -2,7 +2,6 @@
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
-
     # Desktop apps
     firefox
     wezterm
@@ -35,7 +34,8 @@
     glib
 
     # CLI utils
-    warpd
+    pandoc
+    wf-recorder
     bat
     git
     tree
