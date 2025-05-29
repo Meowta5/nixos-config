@@ -1,0 +1,3 @@
+hosts/pro/secret/*
+!hosts/pro/secret/default.nix
+!hosts/pro/secret/main.nix.example

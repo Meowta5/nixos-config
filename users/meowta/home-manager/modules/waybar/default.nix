@@ -104,7 +104,7 @@
           };
         };
         "cpu" = {
-          "interval" = 10;
+          "interval" = 3;
           "format" = "   {usage}% ";
         };
         "disk" = {
@@ -112,7 +112,7 @@
           "interval" = 3600;
         };
         "memory" = {
-          "interval" = 10;
+          "interval" = 3;
           "format" = "   {used}GB/{total}GB ";
         };
         "custom/launcher" = {

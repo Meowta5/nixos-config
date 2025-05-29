@@ -17,7 +17,7 @@
     obsidian
     imv
     mpv
-    qemu
+    blueman
 
     # Coding stuff
     openssl
@@ -39,7 +39,7 @@
     bat
     git
     tree
-    btop
+    neohtop
     fastfetch
     zip
     unzip
@@ -48,7 +48,7 @@
     inxi
     bluez
     bluez-tools
-    blueman
+    qemu
 
     # WM and stuff
     hyprland
