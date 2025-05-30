@@ -11,6 +11,7 @@ in
 
   imports = [
     ./home-packages.nix
+    ./secret
     ./modules
   ];
 
