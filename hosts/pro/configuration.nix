@@ -1,6 +1,6 @@
 { config, pkgs, stateVersion, ... }: {
   imports = [
-    ../hardware-configuration.nix
+    ./hardware-configuration.nix
     ./modules
   ];
 

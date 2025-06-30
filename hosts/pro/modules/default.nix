@@ -12,5 +12,6 @@
     ./docker.nix
     ./bluetooth.nix
     ./virtualbox.nix
+    ./steam.nix
   ];
 }

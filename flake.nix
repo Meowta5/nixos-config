@@ -15,7 +15,7 @@
       system = "x86_64-linux";
       homeStateVersion = "25.05";
       users = [
-        "meowta"
+        "draco"
       ];
       hosts = [
         { hostname = "pro"; stateVersion = "25.05"; }
